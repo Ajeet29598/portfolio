@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<title>Resume | Home</title>
+<div class=" mt-5 ">
+  <div class="text-center">
+    <img class="img-thumbnail" width="250px" height="150px" src="{% static 'core/images/Ajeet.jpg'%}" alt="ProfilePic ">
+  </div>
+
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold">Hello,</h1>
+  
+    <div class="px-4" style="line-height:2rem;">
+      <p style="text-indent:100px">
+        I am 
+        <b class="text-warning">Ajeet Yadav </b>
+          I have 3 months internship experience as Python developer.
+          I have also done 6 months specialization for web developer.
+          I have done BCA from Nistha Institute of Science & Technology - Azamgarh in 2020.
+          Currently, I am looking for job,
+          I have excellent knowledge of Python Flask, Django, SQL, HTML, CSS, JavaScript.
+      </p>
+
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+  &nbsp&nbsp  &nbsp&nbsp  &nbsp&nbsp &nbsp&nbsp 
+  
+ 
+ 
+  
+    <a href="{% url 'contact' %}" class="btn btn-outline-info  my-3">Contact</a>
+
+  </div>
+</div>
+{% endblock content %}
